@@ -14,6 +14,9 @@ namespace BusPirate
 	{
 		BPPort bpPort = null;
 		private bool script_changed = false;
+		private IAsyncResult timerResult = null;
+		private IAsyncResult statusResult = null;
+		private IAsyncResult logResult = null;
 
 		public BPConsole()
 		{
@@ -64,13 +67,11 @@ namespace BusPirate
 							if (bpPort.Info() == BP_RESPONSE.OK)
 								DisplayPins();
 
-							TimerStart();
+							SetAutoUpdate();
 							return;
 						}
-						else
-						{
-							StatusText("BusPirate not found");
-						}
+						bpPort = null;
+						StatusText("BusPirate not found");
 					}
 					catch (Exception ex)
 					{
@@ -80,7 +81,7 @@ namespace BusPirate
 			}
 			else
 			{
-				timer.Stop();
+				TimerStop();
 				Connect.Text = "F8 - Connect";
 				groupCommand.Enabled = groupMode.Enabled = false;
 				bpPort.Disconnect();
@@ -88,22 +89,25 @@ namespace BusPirate
 			}
 		}
 
-		private void TimerStart()
-		{
-			if (AutoInfo.Checked == true)
-			{
-				timer.Interval = (int)Interval.Value;
-				timer.Start();
-			}
-		}
 		private void TimerStop()
 		{
 			timer.Stop();
 		}
 
+		private void SetAutoUpdate()
+		{
+			if (AutoInfo.Checked == true && bpPort != null)
+			{
+				timer.Interval = (int)Interval.Value;
+				timer.Start();
+			}
+			else
+				TimerStop();
+		}
+
 		private void AutoInfo_CheckedChanged(object sender, EventArgs e)
 		{
-			TimerStart();
+			SetAutoUpdate();
 		}
 
 		private void timer_Tick(object sender, EventArgs e)
@@ -113,14 +117,21 @@ namespace BusPirate
 			{
 				if (InvokeRequired)
 				{
-					try
+					if (timerResult == null || timerResult.IsCompleted)
 					{
-						BeginInvoke(new MethodInvoker(delegate()
-							{
-								timer_Tick(sender, e);
-							}));
+						try
+						{
+							if (timerResult != null)
+								EndInvoke(timerResult);
+						}
+						finally
+						{
+							timerResult = BeginInvoke(new MethodInvoker(delegate()
+								{
+									timer_Tick(sender, e);
+								}));
+						}
 					}
-					catch { }
 				}
 				else
 					RefreshVoltage();
@@ -129,12 +140,12 @@ namespace BusPirate
 
 		void bpPort_SendStarted(object sender, string data)
 		{
-			timer.Stop();
+			TimerStop();
 		}
 
 		void bpPort_SendEnded(object sender, string data)
 		{
-			TimerStart();
+			SetAutoUpdate();
 		}
 
 		void bpPort_RecieveData(object sender, string data)
@@ -147,9 +158,20 @@ namespace BusPirate
 			if (string.IsNullOrEmpty(data))
 				return;
 
-			if (this.InvokeRequired)
+			if (InvokeRequired)
 			{
-				this.BeginInvoke(new Action<string>(AppendLog), data);
+				if (logResult == null || logResult.IsCompleted)
+				{
+					try
+					{
+						if (logResult != null)
+							EndInvoke(logResult);
+					}
+					finally
+					{
+						logResult = BeginInvoke(new Action<string>(AppendLog), data);
+					}
+				}
 			}
 			else
 			{
@@ -344,7 +366,20 @@ namespace BusPirate
 		private void StatusText(string text)
 		{
 			if (this.InvokeRequired)
-				this.BeginInvoke(new Action<string>(StatusText), new object[] { text });
+			{
+				if (statusResult == null || statusResult.IsCompleted)
+				{
+					try
+					{
+						if (statusResult != null)
+							EndInvoke(statusResult);
+					}
+					finally
+					{
+						statusResult = BeginInvoke(new Action<string>(StatusText), new object[] { text });
+					}
+				}
+			}
 			else
 			{
 				Status.Text = text;
@@ -594,8 +629,7 @@ namespace BusPirate
 				if (bpPort != null)
 					bpPort.Send(c);
 				if (c == '\r')
-					TimerStart();
-
+					SetAutoUpdate();
 				e.Handled = true;
 			}
 		}

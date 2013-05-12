@@ -627,6 +627,8 @@ namespace BusPirate
 					IsConnected = true;
 					response = Info();
 				}
+				else
+					Close();
 			}
 			return response;
 		}
@@ -694,6 +696,7 @@ namespace BusPirate
 					{
 						PrepareSend();
 						bp_processing = true;
+						WriteTimeout = 5000;
 						WriteLine(command);
 
 						long end_time = DateTime.Now.Ticks + ((long)timeout * TimeSpan.TicksPerMillisecond);

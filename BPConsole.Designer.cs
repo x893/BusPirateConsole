@@ -166,7 +166,7 @@
 			this.timer = new System.Windows.Forms.Timer(this.components);
 			this.label13 = new System.Windows.Forms.Label();
 			this.InfoPanel = new System.Windows.Forms.SplitContainer();
-			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+			this.statusStrip = new System.Windows.Forms.StatusStrip();
 			this.Status = new System.Windows.Forms.ToolStripStatusLabel();
 			this.Script = new BusPirate.TextBoxEx();
 			this.Log = new BusPirate.TextBoxEx();
@@ -196,7 +196,7 @@
 			this.InfoPanel.Panel1.SuspendLayout();
 			this.InfoPanel.Panel2.SuspendLayout();
 			this.InfoPanel.SuspendLayout();
-			this.statusStrip1.SuspendLayout();
+			this.statusStrip.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// ComPort
@@ -204,28 +204,25 @@
 			this.ComPort.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
 			this.ComPort.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
 			this.ComPort.FormattingEnabled = true;
-			this.ComPort.Location = new System.Drawing.Point(20, 31);
-			this.ComPort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.ComPort.Location = new System.Drawing.Point(15, 25);
 			this.ComPort.Name = "ComPort";
-			this.ComPort.Size = new System.Drawing.Size(132, 24);
+			this.ComPort.Size = new System.Drawing.Size(100, 21);
 			this.ComPort.TabIndex = 0;
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(17, 10);
-			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label1.Location = new System.Drawing.Point(13, 8);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(69, 17);
+			this.label1.Size = new System.Drawing.Size(53, 13);
 			this.label1.TabIndex = 1;
 			this.label1.Text = "COM Port";
 			// 
 			// Connect
 			// 
-			this.Connect.Location = new System.Drawing.Point(161, 28);
-			this.Connect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Connect.Location = new System.Drawing.Point(121, 23);
 			this.Connect.Name = "Connect";
-			this.Connect.Size = new System.Drawing.Size(133, 28);
+			this.Connect.Size = new System.Drawing.Size(100, 23);
 			this.Connect.TabIndex = 1;
 			this.Connect.Text = "F8 - Connect";
 			this.Connect.UseVisualStyleBackColor = true;
@@ -241,11 +238,9 @@
 			this.groupMode.Controls.Add(this.SetMode);
 			this.groupMode.Controls.Add(this.Mode);
 			this.groupMode.Enabled = false;
-			this.groupMode.Location = new System.Drawing.Point(20, 64);
-			this.groupMode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupMode.Location = new System.Drawing.Point(15, 52);
 			this.groupMode.Name = "groupMode";
-			this.groupMode.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupMode.Size = new System.Drawing.Size(475, 331);
+			this.groupMode.Size = new System.Drawing.Size(356, 269);
 			this.groupMode.TabIndex = 8;
 			this.groupMode.TabStop = false;
 			this.groupMode.Text = "Mode";
@@ -258,11 +253,9 @@
 			this.groupSPI.Controls.Add(this.groupBox3);
 			this.groupSPI.Controls.Add(this.groupBox2);
 			this.groupSPI.Controls.Add(this.groupBox1);
-			this.groupSPI.Location = new System.Drawing.Point(8, 57);
-			this.groupSPI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupSPI.Location = new System.Drawing.Point(6, 46);
 			this.groupSPI.Name = "groupSPI";
-			this.groupSPI.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupSPI.Size = new System.Drawing.Size(459, 267);
+			this.groupSPI.Size = new System.Drawing.Size(344, 217);
 			this.groupSPI.TabIndex = 2;
 			this.groupSPI.TabStop = false;
 			this.groupSPI.Text = "SPI Parameters";
@@ -272,11 +265,9 @@
 			// 
 			this.groupBox6.Controls.Add(this.cbSpiOutOC);
 			this.groupBox6.Controls.Add(this.cbSpiOutNormal);
-			this.groupBox6.Location = new System.Drawing.Point(124, 183);
-			this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox6.Location = new System.Drawing.Point(93, 149);
 			this.groupBox6.Name = "groupBox6";
-			this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupBox6.Size = new System.Drawing.Size(327, 78);
+			this.groupBox6.Size = new System.Drawing.Size(245, 63);
 			this.groupBox6.TabIndex = 5;
 			this.groupBox6.TabStop = false;
 			this.groupBox6.Text = "Select output type";
@@ -284,10 +275,9 @@
 			// cbSpiOutOC
 			// 
 			this.cbSpiOutOC.AutoSize = true;
-			this.cbSpiOutOC.Location = new System.Drawing.Point(8, 23);
-			this.cbSpiOutOC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbSpiOutOC.Location = new System.Drawing.Point(6, 19);
 			this.cbSpiOutOC.Name = "cbSpiOutOC";
-			this.cbSpiOutOC.Size = new System.Drawing.Size(214, 21);
+			this.cbSpiOutOC.Size = new System.Drawing.Size(162, 17);
 			this.cbSpiOutOC.TabIndex = 0;
 			this.cbSpiOutOC.Text = "Open drain (H=Hi-Z, L=GND)";
 			this.cbSpiOutOC.UseVisualStyleBackColor = true;
@@ -296,10 +286,9 @@
 			// 
 			this.cbSpiOutNormal.AutoSize = true;
 			this.cbSpiOutNormal.Checked = true;
-			this.cbSpiOutNormal.Location = new System.Drawing.Point(8, 52);
-			this.cbSpiOutNormal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbSpiOutNormal.Location = new System.Drawing.Point(6, 42);
 			this.cbSpiOutNormal.Name = "cbSpiOutNormal";
-			this.cbSpiOutNormal.Size = new System.Drawing.Size(190, 21);
+			this.cbSpiOutNormal.Size = new System.Drawing.Size(145, 17);
 			this.cbSpiOutNormal.TabIndex = 1;
 			this.cbSpiOutNormal.TabStop = true;
 			this.cbSpiOutNormal.Text = "Normal (H=3.3V, L=GND)";
@@ -309,11 +298,9 @@
 			// 
 			this.groupBox5.Controls.Add(this.cbSpiCsPositive);
 			this.groupBox5.Controls.Add(this.cbSpiCsNegative);
-			this.groupBox5.Location = new System.Drawing.Point(291, 103);
-			this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox5.Location = new System.Drawing.Point(218, 84);
 			this.groupBox5.Name = "groupBox5";
-			this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupBox5.Size = new System.Drawing.Size(160, 78);
+			this.groupBox5.Size = new System.Drawing.Size(120, 63);
 			this.groupBox5.TabIndex = 4;
 			this.groupBox5.TabStop = false;
 			this.groupBox5.Text = "CS";
@@ -321,10 +308,9 @@
 			// cbSpiCsPositive
 			// 
 			this.cbSpiCsPositive.AutoSize = true;
-			this.cbSpiCsPositive.Location = new System.Drawing.Point(8, 23);
-			this.cbSpiCsPositive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbSpiCsPositive.Location = new System.Drawing.Point(6, 19);
 			this.cbSpiCsPositive.Name = "cbSpiCsPositive";
-			this.cbSpiCsPositive.Size = new System.Drawing.Size(47, 21);
+			this.cbSpiCsPositive.Size = new System.Drawing.Size(39, 17);
 			this.cbSpiCsPositive.TabIndex = 0;
 			this.cbSpiCsPositive.Text = "CS";
 			this.cbSpiCsPositive.UseVisualStyleBackColor = true;
@@ -333,10 +319,9 @@
 			// 
 			this.cbSpiCsNegative.AutoSize = true;
 			this.cbSpiCsNegative.Checked = true;
-			this.cbSpiCsNegative.Location = new System.Drawing.Point(8, 52);
-			this.cbSpiCsNegative.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbSpiCsNegative.Location = new System.Drawing.Point(6, 42);
 			this.cbSpiCsNegative.Name = "cbSpiCsNegative";
-			this.cbSpiCsNegative.Size = new System.Drawing.Size(74, 21);
+			this.cbSpiCsNegative.Size = new System.Drawing.Size(60, 17);
 			this.cbSpiCsNegative.TabIndex = 1;
 			this.cbSpiCsNegative.TabStop = true;
 			this.cbSpiCsNegative.Text = "/ CS (*)";
@@ -346,11 +331,9 @@
 			// 
 			this.groupBox4.Controls.Add(this.cbSpiInputMiddle);
 			this.groupBox4.Controls.Add(this.cbSpiInputEnd);
-			this.groupBox4.Location = new System.Drawing.Point(124, 103);
-			this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox4.Location = new System.Drawing.Point(93, 84);
 			this.groupBox4.Name = "groupBox4";
-			this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupBox4.Size = new System.Drawing.Size(159, 78);
+			this.groupBox4.Size = new System.Drawing.Size(119, 63);
 			this.groupBox4.TabIndex = 3;
 			this.groupBox4.TabStop = false;
 			this.groupBox4.Text = "Input sample phase";
@@ -359,10 +342,9 @@
 			// 
 			this.cbSpiInputMiddle.AutoSize = true;
 			this.cbSpiInputMiddle.Checked = true;
-			this.cbSpiInputMiddle.Location = new System.Drawing.Point(8, 23);
-			this.cbSpiInputMiddle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbSpiInputMiddle.Location = new System.Drawing.Point(6, 19);
 			this.cbSpiInputMiddle.Name = "cbSpiInputMiddle";
-			this.cbSpiInputMiddle.Size = new System.Drawing.Size(89, 21);
+			this.cbSpiInputMiddle.Size = new System.Drawing.Size(69, 17);
 			this.cbSpiInputMiddle.TabIndex = 0;
 			this.cbSpiInputMiddle.TabStop = true;
 			this.cbSpiInputMiddle.Text = "Middle (*)";
@@ -371,10 +353,9 @@
 			// cbSpiInputEnd
 			// 
 			this.cbSpiInputEnd.AutoSize = true;
-			this.cbSpiInputEnd.Location = new System.Drawing.Point(8, 52);
-			this.cbSpiInputEnd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbSpiInputEnd.Location = new System.Drawing.Point(6, 42);
 			this.cbSpiInputEnd.Name = "cbSpiInputEnd";
-			this.cbSpiInputEnd.Size = new System.Drawing.Size(54, 21);
+			this.cbSpiInputEnd.Size = new System.Drawing.Size(44, 17);
 			this.cbSpiInputEnd.TabIndex = 1;
 			this.cbSpiInputEnd.Text = "End";
 			this.cbSpiInputEnd.UseVisualStyleBackColor = true;
@@ -383,11 +364,9 @@
 			// 
 			this.groupBox3.Controls.Add(this.cbSpiEdgeIdle);
 			this.groupBox3.Controls.Add(this.cbSpiEdgeActive);
-			this.groupBox3.Location = new System.Drawing.Point(291, 23);
-			this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox3.Location = new System.Drawing.Point(218, 19);
 			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupBox3.Size = new System.Drawing.Size(160, 78);
+			this.groupBox3.Size = new System.Drawing.Size(120, 63);
 			this.groupBox3.TabIndex = 2;
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Output clock edge";
@@ -395,10 +374,9 @@
 			// cbSpiEdgeIdle
 			// 
 			this.cbSpiEdgeIdle.AutoSize = true;
-			this.cbSpiEdgeIdle.Location = new System.Drawing.Point(8, 23);
-			this.cbSpiEdgeIdle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbSpiEdgeIdle.Location = new System.Drawing.Point(6, 19);
 			this.cbSpiEdgeIdle.Name = "cbSpiEdgeIdle";
-			this.cbSpiEdgeIdle.Size = new System.Drawing.Size(108, 21);
+			this.cbSpiEdgeIdle.Size = new System.Drawing.Size(86, 17);
 			this.cbSpiEdgeIdle.TabIndex = 0;
 			this.cbSpiEdgeIdle.Text = "Idle to active";
 			this.cbSpiEdgeIdle.UseVisualStyleBackColor = true;
@@ -407,10 +385,9 @@
 			// 
 			this.cbSpiEdgeActive.AutoSize = true;
 			this.cbSpiEdgeActive.Checked = true;
-			this.cbSpiEdgeActive.Location = new System.Drawing.Point(8, 52);
-			this.cbSpiEdgeActive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbSpiEdgeActive.Location = new System.Drawing.Point(6, 42);
 			this.cbSpiEdgeActive.Name = "cbSpiEdgeActive";
-			this.cbSpiEdgeActive.Size = new System.Drawing.Size(128, 21);
+			this.cbSpiEdgeActive.Size = new System.Drawing.Size(99, 17);
 			this.cbSpiEdgeActive.TabIndex = 1;
 			this.cbSpiEdgeActive.TabStop = true;
 			this.cbSpiEdgeActive.Text = "Active to idle (*)";
@@ -420,11 +397,9 @@
 			// 
 			this.groupBox2.Controls.Add(this.cbSpiPolarityLow);
 			this.groupBox2.Controls.Add(this.cbSpiPolarityHigh);
-			this.groupBox2.Location = new System.Drawing.Point(124, 23);
-			this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox2.Location = new System.Drawing.Point(93, 19);
 			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupBox2.Size = new System.Drawing.Size(159, 78);
+			this.groupBox2.Size = new System.Drawing.Size(119, 63);
 			this.groupBox2.TabIndex = 1;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Clock polarity";
@@ -433,10 +408,9 @@
 			// 
 			this.cbSpiPolarityLow.AutoSize = true;
 			this.cbSpiPolarityLow.Checked = true;
-			this.cbSpiPolarityLow.Location = new System.Drawing.Point(8, 23);
-			this.cbSpiPolarityLow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbSpiPolarityLow.Location = new System.Drawing.Point(6, 19);
 			this.cbSpiPolarityLow.Name = "cbSpiPolarityLow";
-			this.cbSpiPolarityLow.Size = new System.Drawing.Size(94, 21);
+			this.cbSpiPolarityLow.Size = new System.Drawing.Size(74, 17);
 			this.cbSpiPolarityLow.TabIndex = 0;
 			this.cbSpiPolarityLow.TabStop = true;
 			this.cbSpiPolarityLow.Text = "Idle low (*)";
@@ -445,10 +419,9 @@
 			// cbSpiPolarityHigh
 			// 
 			this.cbSpiPolarityHigh.AutoSize = true;
-			this.cbSpiPolarityHigh.Location = new System.Drawing.Point(8, 52);
-			this.cbSpiPolarityHigh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbSpiPolarityHigh.Location = new System.Drawing.Point(6, 42);
 			this.cbSpiPolarityHigh.Name = "cbSpiPolarityHigh";
-			this.cbSpiPolarityHigh.Size = new System.Drawing.Size(82, 21);
+			this.cbSpiPolarityHigh.Size = new System.Drawing.Size(65, 17);
 			this.cbSpiPolarityHigh.TabIndex = 1;
 			this.cbSpiPolarityHigh.Text = "Idle high";
 			this.cbSpiPolarityHigh.UseVisualStyleBackColor = true;
@@ -459,11 +432,9 @@
 			this.groupBox1.Controls.Add(this.cbSpi125);
 			this.groupBox1.Controls.Add(this.cbSpi250);
 			this.groupBox1.Controls.Add(this.cbSpi1000);
-			this.groupBox1.Location = new System.Drawing.Point(8, 23);
-			this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox1.Location = new System.Drawing.Point(6, 19);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupBox1.Size = new System.Drawing.Size(108, 158);
+			this.groupBox1.Size = new System.Drawing.Size(81, 128);
 			this.groupBox1.TabIndex = 0;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Speed";
@@ -471,10 +442,9 @@
 			// cbSpi30
 			// 
 			this.cbSpi30.AutoSize = true;
-			this.cbSpi30.Location = new System.Drawing.Point(8, 23);
-			this.cbSpi30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbSpi30.Location = new System.Drawing.Point(6, 19);
 			this.cbSpi30.Name = "cbSpi30";
-			this.cbSpi30.Size = new System.Drawing.Size(71, 21);
+			this.cbSpi30.Size = new System.Drawing.Size(57, 17);
 			this.cbSpi30.TabIndex = 0;
 			this.cbSpi30.Text = "30KHz";
 			this.cbSpi30.UseVisualStyleBackColor = true;
@@ -482,10 +452,9 @@
 			// cbSpi125
 			// 
 			this.cbSpi125.AutoSize = true;
-			this.cbSpi125.Location = new System.Drawing.Point(8, 52);
-			this.cbSpi125.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbSpi125.Location = new System.Drawing.Point(6, 42);
 			this.cbSpi125.Name = "cbSpi125";
-			this.cbSpi125.Size = new System.Drawing.Size(79, 21);
+			this.cbSpi125.Size = new System.Drawing.Size(63, 17);
 			this.cbSpi125.TabIndex = 1;
 			this.cbSpi125.Text = "125KHz";
 			this.cbSpi125.UseVisualStyleBackColor = true;
@@ -494,10 +463,9 @@
 			// 
 			this.cbSpi250.AutoSize = true;
 			this.cbSpi250.Checked = true;
-			this.cbSpi250.Location = new System.Drawing.Point(8, 80);
-			this.cbSpi250.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbSpi250.Location = new System.Drawing.Point(6, 65);
 			this.cbSpi250.Name = "cbSpi250";
-			this.cbSpi250.Size = new System.Drawing.Size(79, 21);
+			this.cbSpi250.Size = new System.Drawing.Size(63, 17);
 			this.cbSpi250.TabIndex = 2;
 			this.cbSpi250.TabStop = true;
 			this.cbSpi250.Text = "250KHz";
@@ -506,10 +474,9 @@
 			// cbSpi1000
 			// 
 			this.cbSpi1000.AutoSize = true;
-			this.cbSpi1000.Location = new System.Drawing.Point(8, 108);
-			this.cbSpi1000.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbSpi1000.Location = new System.Drawing.Point(6, 88);
 			this.cbSpi1000.Name = "cbSpi1000";
-			this.cbSpi1000.Size = new System.Drawing.Size(65, 21);
+			this.cbSpi1000.Size = new System.Drawing.Size(53, 17);
 			this.cbSpi1000.TabIndex = 3;
 			this.cbSpi1000.Text = "1MHz";
 			this.cbSpi1000.UseVisualStyleBackColor = true;
@@ -520,11 +487,9 @@
 			this.groupI2C.Controls.Add(this.cbI2C100);
 			this.groupI2C.Controls.Add(this.cbI2C50);
 			this.groupI2C.Controls.Add(this.cbI2C5);
-			this.groupI2C.Location = new System.Drawing.Point(8, 57);
-			this.groupI2C.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupI2C.Location = new System.Drawing.Point(6, 46);
 			this.groupI2C.Name = "groupI2C";
-			this.groupI2C.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupI2C.Size = new System.Drawing.Size(459, 140);
+			this.groupI2C.Size = new System.Drawing.Size(344, 114);
 			this.groupI2C.TabIndex = 1;
 			this.groupI2C.TabStop = false;
 			this.groupI2C.Text = "I2C Parameters";
@@ -534,10 +499,9 @@
 			// 
 			this.cbI2C400.AutoSize = true;
 			this.cbI2C400.Checked = true;
-			this.cbI2C400.Location = new System.Drawing.Point(12, 108);
-			this.cbI2C400.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbI2C400.Location = new System.Drawing.Point(9, 88);
 			this.cbI2C400.Name = "cbI2C400";
-			this.cbI2C400.Size = new System.Drawing.Size(79, 21);
+			this.cbI2C400.Size = new System.Drawing.Size(63, 17);
 			this.cbI2C400.TabIndex = 3;
 			this.cbI2C400.TabStop = true;
 			this.cbI2C400.Text = "400KHz";
@@ -546,10 +510,9 @@
 			// cbI2C100
 			// 
 			this.cbI2C100.AutoSize = true;
-			this.cbI2C100.Location = new System.Drawing.Point(12, 80);
-			this.cbI2C100.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbI2C100.Location = new System.Drawing.Point(9, 65);
 			this.cbI2C100.Name = "cbI2C100";
-			this.cbI2C100.Size = new System.Drawing.Size(79, 21);
+			this.cbI2C100.Size = new System.Drawing.Size(63, 17);
 			this.cbI2C100.TabIndex = 2;
 			this.cbI2C100.Text = "100KHz";
 			this.cbI2C100.UseVisualStyleBackColor = true;
@@ -557,10 +520,9 @@
 			// cbI2C50
 			// 
 			this.cbI2C50.AutoSize = true;
-			this.cbI2C50.Location = new System.Drawing.Point(12, 52);
-			this.cbI2C50.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbI2C50.Location = new System.Drawing.Point(9, 42);
 			this.cbI2C50.Name = "cbI2C50";
-			this.cbI2C50.Size = new System.Drawing.Size(71, 21);
+			this.cbI2C50.Size = new System.Drawing.Size(57, 17);
 			this.cbI2C50.TabIndex = 1;
 			this.cbI2C50.Text = "50KHz";
 			this.cbI2C50.UseVisualStyleBackColor = true;
@@ -568,10 +530,9 @@
 			// cbI2C5
 			// 
 			this.cbI2C5.AutoSize = true;
-			this.cbI2C5.Location = new System.Drawing.Point(12, 23);
-			this.cbI2C5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbI2C5.Location = new System.Drawing.Point(9, 19);
 			this.cbI2C5.Name = "cbI2C5";
-			this.cbI2C5.Size = new System.Drawing.Size(63, 21);
+			this.cbI2C5.Size = new System.Drawing.Size(51, 17);
 			this.cbI2C5.TabIndex = 0;
 			this.cbI2C5.Text = "5KHz";
 			this.cbI2C5.UseVisualStyleBackColor = true;
@@ -583,11 +544,9 @@
 			this.groupUART.Controls.Add(this.groupBox11);
 			this.groupUART.Controls.Add(this.groupBox12);
 			this.groupUART.Controls.Add(this.groupBox13);
-			this.groupUART.Location = new System.Drawing.Point(8, 57);
-			this.groupUART.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupUART.Location = new System.Drawing.Point(6, 46);
 			this.groupUART.Name = "groupUART";
-			this.groupUART.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupUART.Size = new System.Drawing.Size(459, 267);
+			this.groupUART.Size = new System.Drawing.Size(344, 217);
 			this.groupUART.TabIndex = 4;
 			this.groupUART.TabStop = false;
 			this.groupUART.Text = "UART Parameters";
@@ -597,11 +556,9 @@
 			// 
 			this.groupBox8.Controls.Add(this.cbUartOutOC);
 			this.groupBox8.Controls.Add(this.cbUartOutNormal);
-			this.groupBox8.Location = new System.Drawing.Point(124, 183);
-			this.groupBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox8.Location = new System.Drawing.Point(93, 149);
 			this.groupBox8.Name = "groupBox8";
-			this.groupBox8.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupBox8.Size = new System.Drawing.Size(327, 78);
+			this.groupBox8.Size = new System.Drawing.Size(245, 63);
 			this.groupBox8.TabIndex = 5;
 			this.groupBox8.TabStop = false;
 			this.groupBox8.Text = "Select output type";
@@ -609,10 +566,9 @@
 			// cbUartOutOC
 			// 
 			this.cbUartOutOC.AutoSize = true;
-			this.cbUartOutOC.Location = new System.Drawing.Point(8, 23);
-			this.cbUartOutOC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbUartOutOC.Location = new System.Drawing.Point(6, 19);
 			this.cbUartOutOC.Name = "cbUartOutOC";
-			this.cbUartOutOC.Size = new System.Drawing.Size(214, 21);
+			this.cbUartOutOC.Size = new System.Drawing.Size(162, 17);
 			this.cbUartOutOC.TabIndex = 0;
 			this.cbUartOutOC.Text = "Open drain (H=Hi-Z, L=GND)";
 			this.cbUartOutOC.UseVisualStyleBackColor = true;
@@ -621,10 +577,9 @@
 			// 
 			this.cbUartOutNormal.AutoSize = true;
 			this.cbUartOutNormal.Checked = true;
-			this.cbUartOutNormal.Location = new System.Drawing.Point(8, 52);
-			this.cbUartOutNormal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbUartOutNormal.Location = new System.Drawing.Point(6, 42);
 			this.cbUartOutNormal.Name = "cbUartOutNormal";
-			this.cbUartOutNormal.Size = new System.Drawing.Size(190, 21);
+			this.cbUartOutNormal.Size = new System.Drawing.Size(145, 17);
 			this.cbUartOutNormal.TabIndex = 1;
 			this.cbUartOutNormal.TabStop = true;
 			this.cbUartOutNormal.Text = "Normal (H=3.3V, L=GND)";
@@ -634,11 +589,9 @@
 			// 
 			this.groupBox9.Controls.Add(this.cbIdle1);
 			this.groupBox9.Controls.Add(this.cbUartIdle0);
-			this.groupBox9.Location = new System.Drawing.Point(291, 102);
-			this.groupBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox9.Location = new System.Drawing.Point(218, 83);
 			this.groupBox9.Name = "groupBox9";
-			this.groupBox9.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupBox9.Size = new System.Drawing.Size(160, 78);
+			this.groupBox9.Size = new System.Drawing.Size(120, 63);
 			this.groupBox9.TabIndex = 4;
 			this.groupBox9.TabStop = false;
 			this.groupBox9.Text = "Polarity";
@@ -647,10 +600,9 @@
 			// 
 			this.cbIdle1.AutoSize = true;
 			this.cbIdle1.Checked = true;
-			this.cbIdle1.Location = new System.Drawing.Point(8, 23);
-			this.cbIdle1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbIdle1.Location = new System.Drawing.Point(6, 19);
 			this.cbIdle1.Name = "cbIdle1";
-			this.cbIdle1.Size = new System.Drawing.Size(82, 21);
+			this.cbIdle1.Size = new System.Drawing.Size(64, 17);
 			this.cbIdle1.TabIndex = 0;
 			this.cbIdle1.TabStop = true;
 			this.cbIdle1.Text = "Idle 1 (*)";
@@ -659,10 +611,9 @@
 			// cbUartIdle0
 			// 
 			this.cbUartIdle0.AutoSize = true;
-			this.cbUartIdle0.Location = new System.Drawing.Point(8, 52);
-			this.cbUartIdle0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbUartIdle0.Location = new System.Drawing.Point(6, 42);
 			this.cbUartIdle0.Name = "cbUartIdle0";
-			this.cbUartIdle0.Size = new System.Drawing.Size(63, 21);
+			this.cbUartIdle0.Size = new System.Drawing.Size(51, 17);
 			this.cbUartIdle0.TabIndex = 1;
 			this.cbUartIdle0.Text = "Idle 0";
 			this.cbUartIdle0.UseVisualStyleBackColor = true;
@@ -671,11 +622,9 @@
 			// 
 			this.groupBox11.Controls.Add(this.cbStop1);
 			this.groupBox11.Controls.Add(this.cbUartStop2);
-			this.groupBox11.Location = new System.Drawing.Point(291, 23);
-			this.groupBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox11.Location = new System.Drawing.Point(218, 19);
 			this.groupBox11.Name = "groupBox11";
-			this.groupBox11.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupBox11.Size = new System.Drawing.Size(160, 75);
+			this.groupBox11.Size = new System.Drawing.Size(120, 61);
 			this.groupBox11.TabIndex = 2;
 			this.groupBox11.TabStop = false;
 			this.groupBox11.Text = "Stop";
@@ -684,10 +633,9 @@
 			// 
 			this.cbStop1.AutoSize = true;
 			this.cbStop1.Checked = true;
-			this.cbStop1.Location = new System.Drawing.Point(8, 25);
-			this.cbStop1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbStop1.Location = new System.Drawing.Point(6, 20);
 			this.cbStop1.Name = "cbStop1";
-			this.cbStop1.Size = new System.Drawing.Size(56, 21);
+			this.cbStop1.Size = new System.Drawing.Size(44, 17);
 			this.cbStop1.TabIndex = 0;
 			this.cbStop1.TabStop = true;
 			this.cbStop1.Text = "1 (*)";
@@ -696,10 +644,9 @@
 			// cbUartStop2
 			// 
 			this.cbUartStop2.AutoSize = true;
-			this.cbUartStop2.Location = new System.Drawing.Point(8, 47);
-			this.cbUartStop2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbUartStop2.Location = new System.Drawing.Point(6, 38);
 			this.cbUartStop2.Name = "cbUartStop2";
-			this.cbUartStop2.Size = new System.Drawing.Size(37, 21);
+			this.cbUartStop2.Size = new System.Drawing.Size(31, 17);
 			this.cbUartStop2.TabIndex = 1;
 			this.cbUartStop2.Text = "2";
 			this.cbUartStop2.UseVisualStyleBackColor = true;
@@ -710,11 +657,9 @@
 			this.groupBox12.Controls.Add(this.cbUart8Odd);
 			this.groupBox12.Controls.Add(this.cbUart8None);
 			this.groupBox12.Controls.Add(this.cbUart8Even);
-			this.groupBox12.Location = new System.Drawing.Point(124, 23);
-			this.groupBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox12.Location = new System.Drawing.Point(93, 19);
 			this.groupBox12.Name = "groupBox12";
-			this.groupBox12.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupBox12.Size = new System.Drawing.Size(159, 124);
+			this.groupBox12.Size = new System.Drawing.Size(119, 101);
 			this.groupBox12.TabIndex = 1;
 			this.groupBox12.TabStop = false;
 			this.groupBox12.Text = "Data && Parity";
@@ -722,10 +667,9 @@
 			// cbUart9None
 			// 
 			this.cbUart9None.AutoSize = true;
-			this.cbUart9None.Location = new System.Drawing.Point(8, 91);
-			this.cbUart9None.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbUart9None.Location = new System.Drawing.Point(6, 74);
 			this.cbUart9None.Name = "cbUart9None";
-			this.cbUart9None.Size = new System.Drawing.Size(79, 21);
+			this.cbUart9None.Size = new System.Drawing.Size(63, 17);
 			this.cbUart9None.TabIndex = 3;
 			this.cbUart9None.Text = "9, None";
 			this.cbUart9None.UseVisualStyleBackColor = true;
@@ -733,10 +677,9 @@
 			// cbUart8Odd
 			// 
 			this.cbUart8Odd.AutoSize = true;
-			this.cbUart8Odd.Location = new System.Drawing.Point(8, 69);
-			this.cbUart8Odd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbUart8Odd.Location = new System.Drawing.Point(6, 56);
 			this.cbUart8Odd.Name = "cbUart8Odd";
-			this.cbUart8Odd.Size = new System.Drawing.Size(77, 21);
+			this.cbUart8Odd.Size = new System.Drawing.Size(62, 17);
 			this.cbUart8Odd.TabIndex = 2;
 			this.cbUart8Odd.Text = "8, Even";
 			this.cbUart8Odd.UseVisualStyleBackColor = true;
@@ -745,10 +688,9 @@
 			// 
 			this.cbUart8None.AutoSize = true;
 			this.cbUart8None.Checked = true;
-			this.cbUart8None.Location = new System.Drawing.Point(8, 25);
-			this.cbUart8None.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbUart8None.Location = new System.Drawing.Point(6, 20);
 			this.cbUart8None.Name = "cbUart8None";
-			this.cbUart8None.Size = new System.Drawing.Size(98, 21);
+			this.cbUart8None.Size = new System.Drawing.Size(76, 17);
 			this.cbUart8None.TabIndex = 0;
 			this.cbUart8None.TabStop = true;
 			this.cbUart8None.Text = "8, None (*)";
@@ -757,10 +699,9 @@
 			// cbUart8Even
 			// 
 			this.cbUart8Even.AutoSize = true;
-			this.cbUart8Even.Location = new System.Drawing.Point(8, 47);
-			this.cbUart8Even.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbUart8Even.Location = new System.Drawing.Point(6, 38);
 			this.cbUart8Even.Name = "cbUart8Even";
-			this.cbUart8Even.Size = new System.Drawing.Size(77, 21);
+			this.cbUart8Even.Size = new System.Drawing.Size(62, 17);
 			this.cbUart8Even.TabIndex = 1;
 			this.cbUart8Even.Text = "8, Even";
 			this.cbUart8Even.UseVisualStyleBackColor = true;
@@ -776,11 +717,9 @@
 			this.groupBox13.Controls.Add(this.cbUart1200);
 			this.groupBox13.Controls.Add(this.cbUart2400);
 			this.groupBox13.Controls.Add(this.cbUart4800);
-			this.groupBox13.Location = new System.Drawing.Point(8, 23);
-			this.groupBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox13.Location = new System.Drawing.Point(6, 19);
 			this.groupBox13.Name = "groupBox13";
-			this.groupBox13.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupBox13.Size = new System.Drawing.Size(108, 238);
+			this.groupBox13.Size = new System.Drawing.Size(81, 193);
 			this.groupBox13.TabIndex = 0;
 			this.groupBox13.TabStop = false;
 			this.groupBox13.Text = "Speed";
@@ -789,10 +728,9 @@
 			// 
 			this.cbUart115200.AutoSize = true;
 			this.cbUart115200.Checked = true;
-			this.cbUart115200.Location = new System.Drawing.Point(8, 202);
-			this.cbUart115200.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbUart115200.Location = new System.Drawing.Point(6, 164);
 			this.cbUart115200.Name = "cbUart115200";
-			this.cbUart115200.Size = new System.Drawing.Size(77, 21);
+			this.cbUart115200.Size = new System.Drawing.Size(61, 17);
 			this.cbUart115200.TabIndex = 8;
 			this.cbUart115200.TabStop = true;
 			this.cbUart115200.Text = "115200";
@@ -801,10 +739,9 @@
 			// cbUart57600
 			// 
 			this.cbUart57600.AutoSize = true;
-			this.cbUart57600.Location = new System.Drawing.Point(8, 180);
-			this.cbUart57600.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbUart57600.Location = new System.Drawing.Point(6, 146);
 			this.cbUart57600.Name = "cbUart57600";
-			this.cbUart57600.Size = new System.Drawing.Size(69, 21);
+			this.cbUart57600.Size = new System.Drawing.Size(55, 17);
 			this.cbUart57600.TabIndex = 7;
 			this.cbUart57600.Text = "57600";
 			this.cbUart57600.UseVisualStyleBackColor = true;
@@ -812,10 +749,9 @@
 			// cbUart38400
 			// 
 			this.cbUart38400.AutoSize = true;
-			this.cbUart38400.Location = new System.Drawing.Point(8, 158);
-			this.cbUart38400.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbUart38400.Location = new System.Drawing.Point(6, 128);
 			this.cbUart38400.Name = "cbUart38400";
-			this.cbUart38400.Size = new System.Drawing.Size(69, 21);
+			this.cbUart38400.Size = new System.Drawing.Size(55, 17);
 			this.cbUart38400.TabIndex = 6;
 			this.cbUart38400.Text = "38400";
 			this.cbUart38400.UseVisualStyleBackColor = true;
@@ -823,10 +759,9 @@
 			// cbUart19200
 			// 
 			this.cbUart19200.AutoSize = true;
-			this.cbUart19200.Location = new System.Drawing.Point(8, 135);
-			this.cbUart19200.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbUart19200.Location = new System.Drawing.Point(6, 110);
 			this.cbUart19200.Name = "cbUart19200";
-			this.cbUart19200.Size = new System.Drawing.Size(69, 21);
+			this.cbUart19200.Size = new System.Drawing.Size(55, 17);
 			this.cbUart19200.TabIndex = 5;
 			this.cbUart19200.Text = "19200";
 			this.cbUart19200.UseVisualStyleBackColor = true;
@@ -834,10 +769,9 @@
 			// cbUart9600
 			// 
 			this.cbUart9600.AutoSize = true;
-			this.cbUart9600.Location = new System.Drawing.Point(8, 113);
-			this.cbUart9600.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbUart9600.Location = new System.Drawing.Point(6, 92);
 			this.cbUart9600.Name = "cbUart9600";
-			this.cbUart9600.Size = new System.Drawing.Size(61, 21);
+			this.cbUart9600.Size = new System.Drawing.Size(49, 17);
 			this.cbUart9600.TabIndex = 4;
 			this.cbUart9600.Text = "9600";
 			this.cbUart9600.UseVisualStyleBackColor = true;
@@ -845,10 +779,9 @@
 			// cbUART300
 			// 
 			this.cbUART300.AutoSize = true;
-			this.cbUART300.Location = new System.Drawing.Point(8, 25);
-			this.cbUART300.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbUART300.Location = new System.Drawing.Point(6, 20);
 			this.cbUART300.Name = "cbUART300";
-			this.cbUART300.Size = new System.Drawing.Size(53, 21);
+			this.cbUART300.Size = new System.Drawing.Size(43, 17);
 			this.cbUART300.TabIndex = 0;
 			this.cbUART300.Text = "300";
 			this.cbUART300.UseVisualStyleBackColor = true;
@@ -856,10 +789,9 @@
 			// cbUart1200
 			// 
 			this.cbUart1200.AutoSize = true;
-			this.cbUart1200.Location = new System.Drawing.Point(8, 47);
-			this.cbUart1200.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbUart1200.Location = new System.Drawing.Point(6, 38);
 			this.cbUart1200.Name = "cbUart1200";
-			this.cbUart1200.Size = new System.Drawing.Size(61, 21);
+			this.cbUart1200.Size = new System.Drawing.Size(49, 17);
 			this.cbUart1200.TabIndex = 1;
 			this.cbUart1200.Text = "1200";
 			this.cbUart1200.UseVisualStyleBackColor = true;
@@ -867,10 +799,9 @@
 			// cbUart2400
 			// 
 			this.cbUart2400.AutoSize = true;
-			this.cbUart2400.Location = new System.Drawing.Point(8, 69);
-			this.cbUart2400.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbUart2400.Location = new System.Drawing.Point(6, 56);
 			this.cbUart2400.Name = "cbUart2400";
-			this.cbUart2400.Size = new System.Drawing.Size(61, 21);
+			this.cbUart2400.Size = new System.Drawing.Size(49, 17);
 			this.cbUart2400.TabIndex = 2;
 			this.cbUart2400.Text = "2400";
 			this.cbUart2400.UseVisualStyleBackColor = true;
@@ -878,10 +809,9 @@
 			// cbUart4800
 			// 
 			this.cbUart4800.AutoSize = true;
-			this.cbUart4800.Location = new System.Drawing.Point(8, 91);
-			this.cbUart4800.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbUart4800.Location = new System.Drawing.Point(6, 74);
 			this.cbUart4800.Name = "cbUart4800";
-			this.cbUart4800.Size = new System.Drawing.Size(61, 21);
+			this.cbUart4800.Size = new System.Drawing.Size(49, 17);
 			this.cbUart4800.TabIndex = 3;
 			this.cbUart4800.Text = "4800";
 			this.cbUart4800.UseVisualStyleBackColor = true;
@@ -894,11 +824,9 @@
 			this.group3WIRE.Controls.Add(this.cb3W100);
 			this.group3WIRE.Controls.Add(this.cb3W50);
 			this.group3WIRE.Controls.Add(this.cb3W5);
-			this.group3WIRE.Location = new System.Drawing.Point(8, 57);
-			this.group3WIRE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.group3WIRE.Location = new System.Drawing.Point(6, 46);
 			this.group3WIRE.Name = "group3WIRE";
-			this.group3WIRE.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.group3WIRE.Size = new System.Drawing.Size(459, 192);
+			this.group3WIRE.Size = new System.Drawing.Size(344, 156);
 			this.group3WIRE.TabIndex = 6;
 			this.group3WIRE.TabStop = false;
 			this.group3WIRE.Text = "3WIRE Parameters";
@@ -908,11 +836,9 @@
 			// 
 			this.groupBox10.Controls.Add(this.cb3WCsPositive);
 			this.groupBox10.Controls.Add(this.cb3WCsNegative);
-			this.groupBox10.Location = new System.Drawing.Point(132, 23);
-			this.groupBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox10.Location = new System.Drawing.Point(99, 19);
 			this.groupBox10.Name = "groupBox10";
-			this.groupBox10.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupBox10.Size = new System.Drawing.Size(160, 78);
+			this.groupBox10.Size = new System.Drawing.Size(120, 63);
 			this.groupBox10.TabIndex = 7;
 			this.groupBox10.TabStop = false;
 			this.groupBox10.Text = "CS";
@@ -920,10 +846,9 @@
 			// cb3WCsPositive
 			// 
 			this.cb3WCsPositive.AutoSize = true;
-			this.cb3WCsPositive.Location = new System.Drawing.Point(8, 23);
-			this.cb3WCsPositive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cb3WCsPositive.Location = new System.Drawing.Point(6, 19);
 			this.cb3WCsPositive.Name = "cb3WCsPositive";
-			this.cb3WCsPositive.Size = new System.Drawing.Size(47, 21);
+			this.cb3WCsPositive.Size = new System.Drawing.Size(39, 17);
 			this.cb3WCsPositive.TabIndex = 0;
 			this.cb3WCsPositive.Text = "CS";
 			this.cb3WCsPositive.UseVisualStyleBackColor = true;
@@ -932,10 +857,9 @@
 			// 
 			this.cb3WCsNegative.AutoSize = true;
 			this.cb3WCsNegative.Checked = true;
-			this.cb3WCsNegative.Location = new System.Drawing.Point(8, 52);
-			this.cb3WCsNegative.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cb3WCsNegative.Location = new System.Drawing.Point(6, 42);
 			this.cb3WCsNegative.Name = "cb3WCsNegative";
-			this.cb3WCsNegative.Size = new System.Drawing.Size(74, 21);
+			this.cb3WCsNegative.Size = new System.Drawing.Size(60, 17);
 			this.cb3WCsNegative.TabIndex = 1;
 			this.cb3WCsNegative.TabStop = true;
 			this.cb3WCsNegative.Text = "/ CS (*)";
@@ -945,11 +869,9 @@
 			// 
 			this.groupBox14.Controls.Add(this.cb3WOutOC);
 			this.groupBox14.Controls.Add(this.cb3WOutNormal);
-			this.groupBox14.Location = new System.Drawing.Point(124, 108);
-			this.groupBox14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox14.Location = new System.Drawing.Point(93, 88);
 			this.groupBox14.Name = "groupBox14";
-			this.groupBox14.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupBox14.Size = new System.Drawing.Size(327, 78);
+			this.groupBox14.Size = new System.Drawing.Size(245, 63);
 			this.groupBox14.TabIndex = 6;
 			this.groupBox14.TabStop = false;
 			this.groupBox14.Text = "Select output type";
@@ -957,10 +879,9 @@
 			// cb3WOutOC
 			// 
 			this.cb3WOutOC.AutoSize = true;
-			this.cb3WOutOC.Location = new System.Drawing.Point(8, 23);
-			this.cb3WOutOC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cb3WOutOC.Location = new System.Drawing.Point(6, 19);
 			this.cb3WOutOC.Name = "cb3WOutOC";
-			this.cb3WOutOC.Size = new System.Drawing.Size(214, 21);
+			this.cb3WOutOC.Size = new System.Drawing.Size(162, 17);
 			this.cb3WOutOC.TabIndex = 0;
 			this.cb3WOutOC.Text = "Open drain (H=Hi-Z, L=GND)";
 			this.cb3WOutOC.UseVisualStyleBackColor = true;
@@ -969,10 +890,9 @@
 			// 
 			this.cb3WOutNormal.AutoSize = true;
 			this.cb3WOutNormal.Checked = true;
-			this.cb3WOutNormal.Location = new System.Drawing.Point(8, 52);
-			this.cb3WOutNormal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cb3WOutNormal.Location = new System.Drawing.Point(6, 42);
 			this.cb3WOutNormal.Name = "cb3WOutNormal";
-			this.cb3WOutNormal.Size = new System.Drawing.Size(190, 21);
+			this.cb3WOutNormal.Size = new System.Drawing.Size(145, 17);
 			this.cb3WOutNormal.TabIndex = 1;
 			this.cb3WOutNormal.TabStop = true;
 			this.cb3WOutNormal.Text = "Normal (H=3.3V, L=GND)";
@@ -982,10 +902,9 @@
 			// 
 			this.cb3W400.AutoSize = true;
 			this.cb3W400.Checked = true;
-			this.cb3W400.Location = new System.Drawing.Point(12, 108);
-			this.cb3W400.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cb3W400.Location = new System.Drawing.Point(9, 88);
 			this.cb3W400.Name = "cb3W400";
-			this.cb3W400.Size = new System.Drawing.Size(79, 21);
+			this.cb3W400.Size = new System.Drawing.Size(63, 17);
 			this.cb3W400.TabIndex = 3;
 			this.cb3W400.TabStop = true;
 			this.cb3W400.Text = "400KHz";
@@ -994,10 +913,9 @@
 			// cb3W100
 			// 
 			this.cb3W100.AutoSize = true;
-			this.cb3W100.Location = new System.Drawing.Point(12, 80);
-			this.cb3W100.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cb3W100.Location = new System.Drawing.Point(9, 65);
 			this.cb3W100.Name = "cb3W100";
-			this.cb3W100.Size = new System.Drawing.Size(79, 21);
+			this.cb3W100.Size = new System.Drawing.Size(63, 17);
 			this.cb3W100.TabIndex = 2;
 			this.cb3W100.Text = "100KHz";
 			this.cb3W100.UseVisualStyleBackColor = true;
@@ -1005,10 +923,9 @@
 			// cb3W50
 			// 
 			this.cb3W50.AutoSize = true;
-			this.cb3W50.Location = new System.Drawing.Point(12, 52);
-			this.cb3W50.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cb3W50.Location = new System.Drawing.Point(9, 42);
 			this.cb3W50.Name = "cb3W50";
-			this.cb3W50.Size = new System.Drawing.Size(71, 21);
+			this.cb3W50.Size = new System.Drawing.Size(57, 17);
 			this.cb3W50.TabIndex = 1;
 			this.cb3W50.Text = "50KHz";
 			this.cb3W50.UseVisualStyleBackColor = true;
@@ -1016,10 +933,9 @@
 			// cb3W5
 			// 
 			this.cb3W5.AutoSize = true;
-			this.cb3W5.Location = new System.Drawing.Point(12, 23);
-			this.cb3W5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cb3W5.Location = new System.Drawing.Point(9, 19);
 			this.cb3W5.Name = "cb3W5";
-			this.cb3W5.Size = new System.Drawing.Size(63, 21);
+			this.cb3W5.Size = new System.Drawing.Size(51, 17);
 			this.cb3W5.TabIndex = 0;
 			this.cb3W5.Text = "5KHz";
 			this.cb3W5.UseVisualStyleBackColor = true;
@@ -1031,11 +947,9 @@
 			this.group2WIRE.Controls.Add(this.cb2W100);
 			this.group2WIRE.Controls.Add(this.cb2W50);
 			this.group2WIRE.Controls.Add(this.cb2W5);
-			this.group2WIRE.Location = new System.Drawing.Point(8, 57);
-			this.group2WIRE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.group2WIRE.Location = new System.Drawing.Point(6, 46);
 			this.group2WIRE.Name = "group2WIRE";
-			this.group2WIRE.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.group2WIRE.Size = new System.Drawing.Size(459, 140);
+			this.group2WIRE.Size = new System.Drawing.Size(344, 114);
 			this.group2WIRE.TabIndex = 5;
 			this.group2WIRE.TabStop = false;
 			this.group2WIRE.Text = "2WIRE Parameters";
@@ -1045,11 +959,9 @@
 			// 
 			this.groupBox7.Controls.Add(this.cb2WOutOC);
 			this.groupBox7.Controls.Add(this.cb2WOutNormal);
-			this.groupBox7.Location = new System.Drawing.Point(124, 52);
-			this.groupBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox7.Location = new System.Drawing.Point(93, 42);
 			this.groupBox7.Name = "groupBox7";
-			this.groupBox7.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupBox7.Size = new System.Drawing.Size(327, 78);
+			this.groupBox7.Size = new System.Drawing.Size(245, 63);
 			this.groupBox7.TabIndex = 6;
 			this.groupBox7.TabStop = false;
 			this.groupBox7.Text = "Select output type";
@@ -1057,10 +969,9 @@
 			// cb2WOutOC
 			// 
 			this.cb2WOutOC.AutoSize = true;
-			this.cb2WOutOC.Location = new System.Drawing.Point(8, 23);
-			this.cb2WOutOC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cb2WOutOC.Location = new System.Drawing.Point(6, 19);
 			this.cb2WOutOC.Name = "cb2WOutOC";
-			this.cb2WOutOC.Size = new System.Drawing.Size(214, 21);
+			this.cb2WOutOC.Size = new System.Drawing.Size(162, 17);
 			this.cb2WOutOC.TabIndex = 0;
 			this.cb2WOutOC.Text = "Open drain (H=Hi-Z, L=GND)";
 			this.cb2WOutOC.UseVisualStyleBackColor = true;
@@ -1069,10 +980,9 @@
 			// 
 			this.cb2WOutNormal.AutoSize = true;
 			this.cb2WOutNormal.Checked = true;
-			this.cb2WOutNormal.Location = new System.Drawing.Point(8, 52);
-			this.cb2WOutNormal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cb2WOutNormal.Location = new System.Drawing.Point(6, 42);
 			this.cb2WOutNormal.Name = "cb2WOutNormal";
-			this.cb2WOutNormal.Size = new System.Drawing.Size(190, 21);
+			this.cb2WOutNormal.Size = new System.Drawing.Size(145, 17);
 			this.cb2WOutNormal.TabIndex = 1;
 			this.cb2WOutNormal.TabStop = true;
 			this.cb2WOutNormal.Text = "Normal (H=3.3V, L=GND)";
@@ -1082,10 +992,9 @@
 			// 
 			this.cb2W400.AutoSize = true;
 			this.cb2W400.Checked = true;
-			this.cb2W400.Location = new System.Drawing.Point(12, 108);
-			this.cb2W400.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cb2W400.Location = new System.Drawing.Point(9, 88);
 			this.cb2W400.Name = "cb2W400";
-			this.cb2W400.Size = new System.Drawing.Size(79, 21);
+			this.cb2W400.Size = new System.Drawing.Size(63, 17);
 			this.cb2W400.TabIndex = 3;
 			this.cb2W400.TabStop = true;
 			this.cb2W400.Text = "400KHz";
@@ -1094,10 +1003,9 @@
 			// cb2W100
 			// 
 			this.cb2W100.AutoSize = true;
-			this.cb2W100.Location = new System.Drawing.Point(12, 80);
-			this.cb2W100.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cb2W100.Location = new System.Drawing.Point(9, 65);
 			this.cb2W100.Name = "cb2W100";
-			this.cb2W100.Size = new System.Drawing.Size(79, 21);
+			this.cb2W100.Size = new System.Drawing.Size(63, 17);
 			this.cb2W100.TabIndex = 2;
 			this.cb2W100.Text = "100KHz";
 			this.cb2W100.UseVisualStyleBackColor = true;
@@ -1105,10 +1013,9 @@
 			// cb2W50
 			// 
 			this.cb2W50.AutoSize = true;
-			this.cb2W50.Location = new System.Drawing.Point(12, 52);
-			this.cb2W50.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cb2W50.Location = new System.Drawing.Point(9, 42);
 			this.cb2W50.Name = "cb2W50";
-			this.cb2W50.Size = new System.Drawing.Size(71, 21);
+			this.cb2W50.Size = new System.Drawing.Size(57, 17);
 			this.cb2W50.TabIndex = 1;
 			this.cb2W50.Text = "50KHz";
 			this.cb2W50.UseVisualStyleBackColor = true;
@@ -1116,20 +1023,18 @@
 			// cb2W5
 			// 
 			this.cb2W5.AutoSize = true;
-			this.cb2W5.Location = new System.Drawing.Point(12, 23);
-			this.cb2W5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cb2W5.Location = new System.Drawing.Point(9, 19);
 			this.cb2W5.Name = "cb2W5";
-			this.cb2W5.Size = new System.Drawing.Size(63, 21);
+			this.cb2W5.Size = new System.Drawing.Size(51, 17);
 			this.cb2W5.TabIndex = 0;
 			this.cb2W5.Text = "5KHz";
 			this.cb2W5.UseVisualStyleBackColor = true;
 			// 
 			// SetMode
 			// 
-			this.SetMode.Location = new System.Drawing.Point(177, 22);
-			this.SetMode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.SetMode.Location = new System.Drawing.Point(133, 18);
 			this.SetMode.Name = "SetMode";
-			this.SetMode.Size = new System.Drawing.Size(100, 28);
+			this.SetMode.Size = new System.Drawing.Size(75, 23);
 			this.SetMode.TabIndex = 3;
 			this.SetMode.Text = "Set";
 			this.SetMode.UseVisualStyleBackColor = true;
@@ -1147,10 +1052,9 @@
             "2WIRE",
             "3WIRE",
             "LCD"});
-			this.Mode.Location = new System.Drawing.Point(8, 23);
-			this.Mode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Mode.Location = new System.Drawing.Point(6, 19);
 			this.Mode.Name = "Mode";
-			this.Mode.Size = new System.Drawing.Size(159, 24);
+			this.Mode.Size = new System.Drawing.Size(120, 21);
 			this.Mode.TabIndex = 0;
 			this.Mode.SelectedIndexChanged += new System.EventHandler(this.Mode_SelectedIndexChanged);
 			// 
@@ -1205,11 +1109,9 @@
 			this.groupCommand.Controls.Add(this.AuxHigh);
 			this.groupCommand.Controls.Add(this.AuxLow);
 			this.groupCommand.Enabled = false;
-			this.groupCommand.Location = new System.Drawing.Point(20, 402);
-			this.groupCommand.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupCommand.Location = new System.Drawing.Point(15, 327);
 			this.groupCommand.Name = "groupCommand";
-			this.groupCommand.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.groupCommand.Size = new System.Drawing.Size(475, 342);
+			this.groupCommand.Size = new System.Drawing.Size(356, 278);
 			this.groupCommand.TabIndex = 9;
 			this.groupCommand.TabStop = false;
 			this.groupCommand.Text = "Commands";
@@ -1221,8 +1123,7 @@
             0,
             0,
             0});
-			this.Interval.Location = new System.Drawing.Point(16, 112);
-			this.Interval.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Interval.Location = new System.Drawing.Point(12, 91);
 			this.Interval.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -1234,7 +1135,7 @@
             0,
             0});
 			this.Interval.Name = "Interval";
-			this.Interval.Size = new System.Drawing.Size(92, 22);
+			this.Interval.Size = new System.Drawing.Size(69, 20);
 			this.Interval.TabIndex = 47;
 			this.Interval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			this.Interval.Value = new decimal(new int[] {
@@ -1246,10 +1147,9 @@
 			// label12
 			// 
 			this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.label12.Location = new System.Drawing.Point(119, 149);
-			this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label12.Location = new System.Drawing.Point(89, 121);
 			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(67, 28);
+			this.label12.Size = new System.Drawing.Size(50, 23);
 			this.label12.TabIndex = 46;
 			this.label12.Text = "GND";
 			this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1257,10 +1157,9 @@
 			// label11
 			// 
 			this.label11.AutoSize = true;
-			this.label11.Location = new System.Drawing.Point(224, 272);
-			this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label11.Location = new System.Drawing.Point(168, 221);
 			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(16, 17);
+			this.label11.Size = new System.Drawing.Size(13, 13);
 			this.label11.TabIndex = 45;
 			this.label11.Text = "1";
 			this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1268,10 +1167,9 @@
 			// label10
 			// 
 			this.label10.AutoSize = true;
-			this.label10.Location = new System.Drawing.Point(189, 272);
-			this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label10.Location = new System.Drawing.Point(142, 221);
 			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(16, 17);
+			this.label10.Size = new System.Drawing.Size(13, 13);
 			this.label10.TabIndex = 44;
 			this.label10.Text = "2";
 			this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1279,10 +1177,9 @@
 			// label9
 			// 
 			this.label9.AutoSize = true;
-			this.label9.Location = new System.Drawing.Point(224, 244);
-			this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label9.Location = new System.Drawing.Point(168, 198);
 			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(16, 17);
+			this.label9.Size = new System.Drawing.Size(13, 13);
 			this.label9.TabIndex = 43;
 			this.label9.Text = "3";
 			this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1290,10 +1187,9 @@
 			// label8
 			// 
 			this.label8.AutoSize = true;
-			this.label8.Location = new System.Drawing.Point(189, 244);
-			this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label8.Location = new System.Drawing.Point(142, 198);
 			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(16, 17);
+			this.label8.Size = new System.Drawing.Size(13, 13);
 			this.label8.TabIndex = 42;
 			this.label8.Text = "4";
 			this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1301,10 +1197,9 @@
 			// label7
 			// 
 			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(224, 155);
-			this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label7.Location = new System.Drawing.Point(168, 126);
 			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(16, 17);
+			this.label7.Size = new System.Drawing.Size(13, 13);
 			this.label7.TabIndex = 41;
 			this.label7.Text = "9";
 			this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1312,10 +1207,9 @@
 			// label6
 			// 
 			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(189, 185);
-			this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label6.Location = new System.Drawing.Point(142, 150);
 			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(16, 17);
+			this.label6.Size = new System.Drawing.Size(13, 13);
 			this.label6.TabIndex = 40;
 			this.label6.Text = "8";
 			this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1323,10 +1217,9 @@
 			// label5
 			// 
 			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(224, 185);
-			this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label5.Location = new System.Drawing.Point(168, 150);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(16, 17);
+			this.label5.Size = new System.Drawing.Size(13, 13);
 			this.label5.TabIndex = 39;
 			this.label5.Text = "7";
 			this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1334,10 +1227,9 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(189, 214);
-			this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label4.Location = new System.Drawing.Point(142, 174);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(16, 17);
+			this.label4.Size = new System.Drawing.Size(13, 13);
 			this.label4.TabIndex = 38;
 			this.label4.Text = "6";
 			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1345,10 +1237,9 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(224, 214);
-			this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label3.Location = new System.Drawing.Point(168, 174);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(16, 17);
+			this.label3.Size = new System.Drawing.Size(13, 13);
 			this.label3.TabIndex = 37;
 			this.label3.Text = "5";
 			this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1356,20 +1247,18 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(189, 155);
-			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label2.Location = new System.Drawing.Point(142, 126);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(24, 17);
+			this.label2.Size = new System.Drawing.Size(19, 13);
 			this.label2.TabIndex = 36;
 			this.label2.Text = "10";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// ClearLog
 			// 
-			this.ClearLog.Location = new System.Drawing.Point(367, 306);
-			this.ClearLog.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.ClearLog.Location = new System.Drawing.Point(275, 249);
 			this.ClearLog.Name = "ClearLog";
-			this.ClearLog.Size = new System.Drawing.Size(100, 28);
+			this.ClearLog.Size = new System.Drawing.Size(75, 23);
 			this.ClearLog.TabIndex = 35;
 			this.ClearLog.Text = "Clear Log";
 			this.ClearLog.UseVisualStyleBackColor = true;
@@ -1380,11 +1269,10 @@
 			this.AutoInfo.AutoSize = true;
 			this.AutoInfo.Checked = true;
 			this.AutoInfo.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.AutoInfo.Location = new System.Drawing.Point(111, 113);
-			this.AutoInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.AutoInfo.Location = new System.Drawing.Point(83, 92);
 			this.AutoInfo.Name = "AutoInfo";
 			this.AutoInfo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-			this.AutoInfo.Size = new System.Drawing.Size(111, 21);
+			this.AutoInfo.Size = new System.Drawing.Size(87, 17);
 			this.AutoInfo.TabIndex = 7;
 			this.AutoInfo.Text = "Auto Voltage";
 			this.AutoInfo.UseVisualStyleBackColor = true;
@@ -1393,90 +1281,81 @@
 			// value2
 			// 
 			this.value2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.value2.Location = new System.Drawing.Point(316, 149);
-			this.value2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.value2.Location = new System.Drawing.Point(237, 121);
 			this.value2.Name = "value2";
-			this.value2.Size = new System.Drawing.Size(53, 28);
+			this.value2.Size = new System.Drawing.Size(40, 23);
 			this.value2.TabIndex = 34;
 			this.value2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// name2
 			// 
 			this.name2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.name2.Location = new System.Drawing.Point(248, 149);
-			this.name2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.name2.Location = new System.Drawing.Point(186, 121);
 			this.name2.Name = "name2";
-			this.name2.Size = new System.Drawing.Size(67, 28);
+			this.name2.Size = new System.Drawing.Size(50, 23);
 			this.name2.TabIndex = 33;
 			this.name2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// value3
 			// 
 			this.value3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.value3.Location = new System.Drawing.Point(51, 178);
-			this.value3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.value3.Location = new System.Drawing.Point(38, 145);
 			this.value3.Name = "value3";
-			this.value3.Size = new System.Drawing.Size(67, 28);
+			this.value3.Size = new System.Drawing.Size(50, 23);
 			this.value3.TabIndex = 32;
 			this.value3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// name3
 			// 
 			this.name3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.name3.Location = new System.Drawing.Point(119, 178);
-			this.name3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.name3.Location = new System.Drawing.Point(89, 145);
 			this.name3.Name = "name3";
-			this.name3.Size = new System.Drawing.Size(67, 28);
+			this.name3.Size = new System.Drawing.Size(50, 23);
 			this.name3.TabIndex = 31;
 			this.name3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// value4
 			// 
 			this.value4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.value4.Location = new System.Drawing.Point(316, 178);
-			this.value4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.value4.Location = new System.Drawing.Point(237, 145);
 			this.value4.Name = "value4";
-			this.value4.Size = new System.Drawing.Size(53, 28);
+			this.value4.Size = new System.Drawing.Size(40, 23);
 			this.value4.TabIndex = 30;
 			this.value4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// name4
 			// 
 			this.name4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.name4.Location = new System.Drawing.Point(248, 178);
-			this.name4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.name4.Location = new System.Drawing.Point(186, 145);
 			this.name4.Name = "name4";
-			this.name4.Size = new System.Drawing.Size(67, 28);
+			this.name4.Size = new System.Drawing.Size(50, 23);
 			this.name4.TabIndex = 29;
 			this.name4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// value5
 			// 
 			this.value5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.value5.Location = new System.Drawing.Point(51, 208);
-			this.value5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.value5.Location = new System.Drawing.Point(38, 169);
 			this.value5.Name = "value5";
-			this.value5.Size = new System.Drawing.Size(67, 28);
+			this.value5.Size = new System.Drawing.Size(50, 23);
 			this.value5.TabIndex = 28;
 			this.value5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// name5
 			// 
 			this.name5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.name5.Location = new System.Drawing.Point(119, 208);
-			this.name5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.name5.Location = new System.Drawing.Point(89, 169);
 			this.name5.Name = "name5";
-			this.name5.Size = new System.Drawing.Size(67, 28);
+			this.name5.Size = new System.Drawing.Size(50, 23);
 			this.name5.TabIndex = 27;
 			this.name5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// value6
 			// 
 			this.value6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.value6.Location = new System.Drawing.Point(316, 208);
-			this.value6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.value6.Location = new System.Drawing.Point(237, 169);
 			this.value6.Name = "value6";
-			this.value6.Size = new System.Drawing.Size(53, 28);
+			this.value6.Size = new System.Drawing.Size(40, 23);
 			this.value6.TabIndex = 26;
 			this.value6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
@@ -1485,30 +1364,27 @@
 			this.mode6.BackColor = System.Drawing.SystemColors.Control;
 			this.mode6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.mode6.ForeColor = System.Drawing.Color.White;
-			this.mode6.Location = new System.Drawing.Point(373, 208);
-			this.mode6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.mode6.Location = new System.Drawing.Point(280, 169);
 			this.mode6.Name = "mode6";
-			this.mode6.Size = new System.Drawing.Size(31, 28);
+			this.mode6.Size = new System.Drawing.Size(23, 23);
 			this.mode6.TabIndex = 25;
 			this.mode6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// name6
 			// 
 			this.name6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.name6.Location = new System.Drawing.Point(248, 208);
-			this.name6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.name6.Location = new System.Drawing.Point(186, 169);
 			this.name6.Name = "name6";
-			this.name6.Size = new System.Drawing.Size(67, 28);
+			this.name6.Size = new System.Drawing.Size(50, 23);
 			this.name6.TabIndex = 24;
 			this.name6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// value7
 			// 
 			this.value7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.value7.Location = new System.Drawing.Point(119, 238);
-			this.value7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.value7.Location = new System.Drawing.Point(89, 193);
 			this.value7.Name = "value7";
-			this.value7.Size = new System.Drawing.Size(67, 28);
+			this.value7.Size = new System.Drawing.Size(50, 23);
 			this.value7.TabIndex = 23;
 			this.value7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
@@ -1517,30 +1393,27 @@
 			this.mode7.BackColor = System.Drawing.SystemColors.Control;
 			this.mode7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.mode7.ForeColor = System.Drawing.Color.White;
-			this.mode7.Location = new System.Drawing.Point(16, 238);
-			this.mode7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.mode7.Location = new System.Drawing.Point(12, 193);
 			this.mode7.Name = "mode7";
-			this.mode7.Size = new System.Drawing.Size(31, 28);
+			this.mode7.Size = new System.Drawing.Size(23, 23);
 			this.mode7.TabIndex = 22;
 			this.mode7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// name7
 			// 
 			this.name7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.name7.Location = new System.Drawing.Point(51, 238);
-			this.name7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.name7.Location = new System.Drawing.Point(38, 193);
 			this.name7.Name = "name7";
-			this.name7.Size = new System.Drawing.Size(67, 28);
+			this.name7.Size = new System.Drawing.Size(50, 23);
 			this.name7.TabIndex = 21;
 			this.name7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// value8
 			// 
 			this.value8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.value8.Location = new System.Drawing.Point(316, 238);
-			this.value8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.value8.Location = new System.Drawing.Point(237, 193);
 			this.value8.Name = "value8";
-			this.value8.Size = new System.Drawing.Size(53, 28);
+			this.value8.Size = new System.Drawing.Size(40, 23);
 			this.value8.TabIndex = 20;
 			this.value8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
@@ -1549,30 +1422,27 @@
 			this.mode8.BackColor = System.Drawing.SystemColors.Control;
 			this.mode8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.mode8.ForeColor = System.Drawing.Color.White;
-			this.mode8.Location = new System.Drawing.Point(373, 238);
-			this.mode8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.mode8.Location = new System.Drawing.Point(280, 193);
 			this.mode8.Name = "mode8";
-			this.mode8.Size = new System.Drawing.Size(31, 28);
+			this.mode8.Size = new System.Drawing.Size(23, 23);
 			this.mode8.TabIndex = 19;
 			this.mode8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// name8
 			// 
 			this.name8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.name8.Location = new System.Drawing.Point(248, 238);
-			this.name8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.name8.Location = new System.Drawing.Point(186, 193);
 			this.name8.Name = "name8";
-			this.name8.Size = new System.Drawing.Size(67, 28);
+			this.name8.Size = new System.Drawing.Size(50, 23);
 			this.name8.TabIndex = 18;
 			this.name8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// value9
 			// 
 			this.value9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.value9.Location = new System.Drawing.Point(119, 266);
-			this.value9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.value9.Location = new System.Drawing.Point(89, 216);
 			this.value9.Name = "value9";
-			this.value9.Size = new System.Drawing.Size(67, 28);
+			this.value9.Size = new System.Drawing.Size(50, 23);
 			this.value9.TabIndex = 17;
 			this.value9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
@@ -1581,30 +1451,27 @@
 			this.mode9.BackColor = System.Drawing.SystemColors.Control;
 			this.mode9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.mode9.ForeColor = System.Drawing.Color.White;
-			this.mode9.Location = new System.Drawing.Point(16, 266);
-			this.mode9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.mode9.Location = new System.Drawing.Point(12, 216);
 			this.mode9.Name = "mode9";
-			this.mode9.Size = new System.Drawing.Size(31, 28);
+			this.mode9.Size = new System.Drawing.Size(23, 23);
 			this.mode9.TabIndex = 16;
 			this.mode9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// name9
 			// 
 			this.name9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.name9.Location = new System.Drawing.Point(51, 266);
-			this.name9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.name9.Location = new System.Drawing.Point(38, 216);
 			this.name9.Name = "name9";
-			this.name9.Size = new System.Drawing.Size(67, 28);
+			this.name9.Size = new System.Drawing.Size(50, 23);
 			this.name9.TabIndex = 15;
 			this.name9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// value10
 			// 
 			this.value10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.value10.Location = new System.Drawing.Point(316, 266);
-			this.value10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.value10.Location = new System.Drawing.Point(237, 216);
 			this.value10.Name = "value10";
-			this.value10.Size = new System.Drawing.Size(53, 28);
+			this.value10.Size = new System.Drawing.Size(40, 23);
 			this.value10.TabIndex = 14;
 			this.value10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
@@ -1613,29 +1480,26 @@
 			this.mode10.BackColor = System.Drawing.SystemColors.Control;
 			this.mode10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.mode10.ForeColor = System.Drawing.Color.White;
-			this.mode10.Location = new System.Drawing.Point(373, 266);
-			this.mode10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.mode10.Location = new System.Drawing.Point(280, 216);
 			this.mode10.Name = "mode10";
-			this.mode10.Size = new System.Drawing.Size(31, 28);
+			this.mode10.Size = new System.Drawing.Size(23, 23);
 			this.mode10.TabIndex = 13;
 			this.mode10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// name10
 			// 
 			this.name10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.name10.Location = new System.Drawing.Point(248, 266);
-			this.name10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.name10.Location = new System.Drawing.Point(186, 216);
 			this.name10.Name = "name10";
-			this.name10.Size = new System.Drawing.Size(67, 28);
+			this.name10.Size = new System.Drawing.Size(50, 23);
 			this.name10.TabIndex = 12;
 			this.name10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// Info
 			// 
-			this.Info.Location = new System.Drawing.Point(233, 80);
-			this.Info.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Info.Location = new System.Drawing.Point(175, 65);
 			this.Info.Name = "Info";
-			this.Info.Size = new System.Drawing.Size(100, 28);
+			this.Info.Size = new System.Drawing.Size(75, 23);
 			this.Info.TabIndex = 6;
 			this.Info.Text = "Info";
 			this.Info.UseVisualStyleBackColor = true;
@@ -1643,10 +1507,9 @@
 			// 
 			// Reset
 			// 
-			this.Reset.Location = new System.Drawing.Point(367, 108);
-			this.Reset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Reset.Location = new System.Drawing.Point(275, 88);
 			this.Reset.Name = "Reset";
-			this.Reset.Size = new System.Drawing.Size(100, 28);
+			this.Reset.Size = new System.Drawing.Size(75, 23);
 			this.Reset.TabIndex = 11;
 			this.Reset.Text = "Reset";
 			this.Reset.UseVisualStyleBackColor = true;
@@ -1654,10 +1517,9 @@
 			// 
 			// Voltage
 			// 
-			this.Voltage.Location = new System.Drawing.Point(233, 108);
-			this.Voltage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Voltage.Location = new System.Drawing.Point(175, 88);
 			this.Voltage.Name = "Voltage";
-			this.Voltage.Size = new System.Drawing.Size(100, 28);
+			this.Voltage.Size = new System.Drawing.Size(75, 23);
 			this.Voltage.TabIndex = 8;
 			this.Voltage.Text = "Voltage";
 			this.Voltage.UseVisualStyleBackColor = true;
@@ -1665,10 +1527,9 @@
 			// 
 			// PowerOn
 			// 
-			this.PowerOn.Location = new System.Drawing.Point(367, 52);
-			this.PowerOn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.PowerOn.Location = new System.Drawing.Point(275, 42);
 			this.PowerOn.Name = "PowerOn";
-			this.PowerOn.Size = new System.Drawing.Size(100, 28);
+			this.PowerOn.Size = new System.Drawing.Size(75, 23);
 			this.PowerOn.TabIndex = 10;
 			this.PowerOn.Text = "Power On";
 			this.PowerOn.UseVisualStyleBackColor = true;
@@ -1676,10 +1537,9 @@
 			// 
 			// PowerOff
 			// 
-			this.PowerOff.Location = new System.Drawing.Point(367, 22);
-			this.PowerOff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.PowerOff.Location = new System.Drawing.Point(275, 18);
 			this.PowerOff.Name = "PowerOff";
-			this.PowerOff.Size = new System.Drawing.Size(100, 28);
+			this.PowerOff.Size = new System.Drawing.Size(75, 23);
 			this.PowerOff.TabIndex = 9;
 			this.PowerOff.Text = "Power Off";
 			this.PowerOff.UseVisualStyleBackColor = true;
@@ -1687,10 +1547,9 @@
 			// 
 			// Delay_mS
 			// 
-			this.Delay_mS.Location = new System.Drawing.Point(233, 52);
-			this.Delay_mS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Delay_mS.Location = new System.Drawing.Point(175, 42);
 			this.Delay_mS.Name = "Delay_mS";
-			this.Delay_mS.Size = new System.Drawing.Size(100, 28);
+			this.Delay_mS.Size = new System.Drawing.Size(75, 23);
 			this.Delay_mS.TabIndex = 5;
 			this.Delay_mS.Text = "Delay mS";
 			this.Delay_mS.UseVisualStyleBackColor = true;
@@ -1698,10 +1557,9 @@
 			// 
 			// Delay
 			// 
-			this.Delay.Location = new System.Drawing.Point(144, 26);
-			this.Delay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Delay.Location = new System.Drawing.Point(108, 21);
 			this.Delay.Name = "Delay";
-			this.Delay.Size = new System.Drawing.Size(83, 22);
+			this.Delay.Size = new System.Drawing.Size(62, 20);
 			this.Delay.TabIndex = 3;
 			this.Delay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			this.Delay.Value = new decimal(new int[] {
@@ -1712,10 +1570,9 @@
 			// 
 			// Delay_uS
 			// 
-			this.Delay_uS.Location = new System.Drawing.Point(233, 23);
-			this.Delay_uS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Delay_uS.Location = new System.Drawing.Point(175, 19);
 			this.Delay_uS.Name = "Delay_uS";
-			this.Delay_uS.Size = new System.Drawing.Size(100, 28);
+			this.Delay_uS.Size = new System.Drawing.Size(75, 23);
 			this.Delay_uS.TabIndex = 4;
 			this.Delay_uS.Text = "Delay uS";
 			this.Delay_uS.UseVisualStyleBackColor = true;
@@ -1723,10 +1580,9 @@
 			// 
 			// AuxRead
 			// 
-			this.AuxRead.Location = new System.Drawing.Point(16, 80);
-			this.AuxRead.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.AuxRead.Location = new System.Drawing.Point(12, 65);
 			this.AuxRead.Name = "AuxRead";
-			this.AuxRead.Size = new System.Drawing.Size(100, 28);
+			this.AuxRead.Size = new System.Drawing.Size(75, 23);
 			this.AuxRead.TabIndex = 2;
 			this.AuxRead.Text = "AUX Read";
 			this.AuxRead.UseVisualStyleBackColor = true;
@@ -1734,10 +1590,9 @@
 			// 
 			// AuxHigh
 			// 
-			this.AuxHigh.Location = new System.Drawing.Point(16, 52);
-			this.AuxHigh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.AuxHigh.Location = new System.Drawing.Point(12, 42);
 			this.AuxHigh.Name = "AuxHigh";
-			this.AuxHigh.Size = new System.Drawing.Size(100, 28);
+			this.AuxHigh.Size = new System.Drawing.Size(75, 23);
 			this.AuxHigh.TabIndex = 1;
 			this.AuxHigh.Text = "AUX High";
 			this.AuxHigh.UseVisualStyleBackColor = true;
@@ -1745,10 +1600,9 @@
 			// 
 			// AuxLow
 			// 
-			this.AuxLow.Location = new System.Drawing.Point(16, 23);
-			this.AuxLow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.AuxLow.Location = new System.Drawing.Point(12, 19);
 			this.AuxLow.Name = "AuxLow";
-			this.AuxLow.Size = new System.Drawing.Size(100, 28);
+			this.AuxLow.Size = new System.Drawing.Size(75, 23);
 			this.AuxLow.TabIndex = 0;
 			this.AuxLow.Text = "AUX Low";
 			this.AuxLow.UseVisualStyleBackColor = true;
@@ -1757,10 +1611,9 @@
 			// Run
 			// 
 			this.Run.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.Run.Location = new System.Drawing.Point(1196, 28);
-			this.Run.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Run.Location = new System.Drawing.Point(897, 23);
 			this.Run.Name = "Run";
-			this.Run.Size = new System.Drawing.Size(100, 28);
+			this.Run.Size = new System.Drawing.Size(75, 23);
 			this.Run.TabIndex = 7;
 			this.Run.Text = "F5 - Run";
 			this.Run.UseVisualStyleBackColor = true;
@@ -1782,19 +1635,17 @@
 			// 
 			this.FileName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.FileName.Location = new System.Drawing.Point(503, 31);
-			this.FileName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.FileName.Location = new System.Drawing.Point(377, 25);
 			this.FileName.Name = "FileName";
-			this.FileName.Size = new System.Drawing.Size(303, 22);
+			this.FileName.Size = new System.Drawing.Size(228, 20);
 			this.FileName.TabIndex = 2;
 			// 
 			// Browse
 			// 
 			this.Browse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.Browse.Location = new System.Drawing.Point(815, 28);
-			this.Browse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Browse.Location = new System.Drawing.Point(611, 23);
 			this.Browse.Name = "Browse";
-			this.Browse.Size = new System.Drawing.Size(33, 28);
+			this.Browse.Size = new System.Drawing.Size(25, 23);
 			this.Browse.TabIndex = 3;
 			this.Browse.Text = "...";
 			this.Browse.UseVisualStyleBackColor = true;
@@ -1803,10 +1654,9 @@
 			// Open
 			// 
 			this.Open.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.Open.Location = new System.Drawing.Point(856, 28);
-			this.Open.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Open.Location = new System.Drawing.Point(642, 23);
 			this.Open.Name = "Open";
-			this.Open.Size = new System.Drawing.Size(100, 28);
+			this.Open.Size = new System.Drawing.Size(75, 23);
 			this.Open.TabIndex = 4;
 			this.Open.Text = "F2 - Open";
 			this.Open.UseVisualStyleBackColor = true;
@@ -1815,10 +1665,9 @@
 			// Save
 			// 
 			this.Save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.Save.Location = new System.Drawing.Point(964, 28);
-			this.Save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Save.Location = new System.Drawing.Point(723, 23);
 			this.Save.Name = "Save";
-			this.Save.Size = new System.Drawing.Size(100, 28);
+			this.Save.Size = new System.Drawing.Size(75, 23);
 			this.Save.TabIndex = 5;
 			this.Save.Text = "F3 - Save";
 			this.Save.UseVisualStyleBackColor = true;
@@ -1827,10 +1676,9 @@
 			// Tab
 			// 
 			this.Tab.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.Tab.Location = new System.Drawing.Point(1088, 28);
-			this.Tab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Tab.Location = new System.Drawing.Point(816, 23);
 			this.Tab.Name = "Tab";
-			this.Tab.Size = new System.Drawing.Size(100, 28);
+			this.Tab.Size = new System.Drawing.Size(75, 23);
 			this.Tab.TabIndex = 11;
 			this.Tab.Text = "Insert TAB";
 			this.Tab.UseVisualStyleBackColor = true;
@@ -1844,10 +1692,9 @@
 			// label13
 			// 
 			this.label13.AutoSize = true;
-			this.label13.Location = new System.Drawing.Point(500, 10);
-			this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label13.Location = new System.Drawing.Point(375, 8);
 			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(69, 17);
+			this.label13.Size = new System.Drawing.Size(52, 13);
 			this.label13.TabIndex = 12;
 			this.label13.Text = "File name";
 			this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1857,8 +1704,7 @@
 			this.InfoPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.InfoPanel.Location = new System.Drawing.Point(503, 62);
-			this.InfoPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.InfoPanel.Location = new System.Drawing.Point(377, 50);
 			this.InfoPanel.Name = "InfoPanel";
 			this.InfoPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
 			// 
@@ -1869,25 +1715,25 @@
 			// InfoPanel.Panel2
 			// 
 			this.InfoPanel.Panel2.Controls.Add(this.Log);
-			this.InfoPanel.Size = new System.Drawing.Size(793, 679);
-			this.InfoPanel.SplitterDistance = 324;
-			this.InfoPanel.SplitterWidth = 5;
+			this.InfoPanel.Size = new System.Drawing.Size(595, 552);
+			this.InfoPanel.SplitterDistance = 263;
 			this.InfoPanel.TabIndex = 13;
 			// 
-			// statusStrip1
+			// statusStrip
 			// 
-			this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Status});
-			this.statusStrip1.Location = new System.Drawing.Point(0, 758);
-			this.statusStrip1.Name = "statusStrip1";
-			this.statusStrip1.Size = new System.Drawing.Size(1312, 22);
-			this.statusStrip1.TabIndex = 14;
-			this.statusStrip1.Text = "statusStrip1";
+			this.statusStrip.Location = new System.Drawing.Point(0, 610);
+			this.statusStrip.Name = "statusStrip";
+			this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
+			this.statusStrip.Size = new System.Drawing.Size(984, 24);
+			this.statusStrip.TabIndex = 14;
 			// 
 			// Status
 			// 
+			this.Status.AutoSize = false;
 			this.Status.Name = "Status";
-			this.Status.Size = new System.Drawing.Size(1297, 17);
+			this.Status.Size = new System.Drawing.Size(973, 19);
 			this.Status.Spring = true;
 			this.Status.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
@@ -1896,11 +1742,10 @@
 			this.Script.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.Script.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.Script.Location = new System.Drawing.Point(0, 0);
-			this.Script.Margin = new System.Windows.Forms.Padding(4);
 			this.Script.Multiline = true;
 			this.Script.Name = "Script";
 			this.Script.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-			this.Script.Size = new System.Drawing.Size(793, 324);
+			this.Script.Size = new System.Drawing.Size(595, 263);
 			this.Script.TabIndex = 6;
 			this.Script.WordWrap = false;
 			this.Script.TextChanged += new System.EventHandler(this.Script_TextChanged);
@@ -1911,22 +1756,21 @@
 			this.Log.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.Log.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.Log.Location = new System.Drawing.Point(0, 0);
-			this.Log.Margin = new System.Windows.Forms.Padding(4);
 			this.Log.Multiline = true;
 			this.Log.Name = "Log";
 			this.Log.ReadOnly = true;
 			this.Log.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-			this.Log.Size = new System.Drawing.Size(793, 350);
+			this.Log.Size = new System.Drawing.Size(595, 285);
 			this.Log.TabIndex = 10;
 			this.Log.WordWrap = false;
 			this.Log.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Log_KeyPress);
 			// 
 			// BPConsole
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1312, 780);
-			this.Controls.Add(this.statusStrip1);
+			this.ClientSize = new System.Drawing.Size(984, 634);
+			this.Controls.Add(this.statusStrip);
 			this.Controls.Add(this.InfoPanel);
 			this.Controls.Add(this.label13);
 			this.Controls.Add(this.Tab);
@@ -1942,7 +1786,6 @@
 			this.Controls.Add(this.groupMode);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.KeyPreview = true;
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.Name = "BPConsole";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "BusPirate Control";
@@ -1994,8 +1837,8 @@
 			this.InfoPanel.Panel2.ResumeLayout(false);
 			this.InfoPanel.Panel2.PerformLayout();
 			this.InfoPanel.ResumeLayout(false);
-			this.statusStrip1.ResumeLayout(false);
-			this.statusStrip1.PerformLayout();
+			this.statusStrip.ResumeLayout(false);
+			this.statusStrip.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -2141,7 +1984,7 @@
 		private System.Windows.Forms.RadioButton cb3W5;
 		private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.SplitContainer InfoPanel;
-		private System.Windows.Forms.StatusStrip statusStrip1;
+		private System.Windows.Forms.StatusStrip statusStrip;
 		private System.Windows.Forms.ToolStripStatusLabel Status;
 	}
 }
