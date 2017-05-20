@@ -23,18 +23,20 @@ namespace BusPirate
 			InitializeComponent();
 		}
 
-		private void Settings_Load(object sender, EventArgs e)
-		{
-			ComPortRefresh();
-		}
-
-		private void ComPortRefresh()
+		private void BPConsole_OnLoad(object sender, EventArgs e)
 		{
 			string selected = ComPort.SelectedItem as string ?? "COM2";
 			ComPort.Items.Clear();
 			SortedList<string, string> ports = new SortedList<string, string>();
-			foreach (string port in SerialPort.GetPortNames())
-				ports.Add(port.ToUpper(), port);
+            foreach (string port in SerialPort.GetPortNames())
+            {
+                if (!string.IsNullOrEmpty(port))
+                {
+                    string key = port.ToUpper();
+                    if (!ports.ContainsKey(key))
+                        ports.Add(key, port);
+                }
+            }
 
 			foreach(string port in ports.Keys)
 			{
